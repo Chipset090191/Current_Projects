@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "560F509A-8F6F-48D6-88EA-1F43B2530C1C"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "59EF33A9-0802-48AF-B425-81DBD8E96D82"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ShootingGallery/GameScene.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "203"
+            endingLineNumber = "203"
+            landmarkName = "touchesEnded(_:with:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "59EF33A9-0802-48AF-B425-81DBD8E96D82 - 8cc04fcb7acecea2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ShootingGallery.GameScene.touchesEnded(_: Swift.Set&lt;__C.UITouch&gt;, with: Swift.Optional&lt;__C.UIEvent&gt;) -&gt; ()"
+                  moduleName = "ShootingGallery"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michael/Programming/100%20days%20with%20Swift%20(UIkit)/Challenge%20day%2066/ShootingGallery/ShootingGallery/GameScene.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "198"
+                  endingLineNumber = "198"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "59EF33A9-0802-48AF-B425-81DBD8E96D82 - 8cc04fcb7acecea2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ShootingGallery.GameScene.touchesEnded(_: Swift.Set&lt;__C.UITouch&gt;, with: Swift.Optional&lt;__C.UIEvent&gt;) -&gt; ()"
+                  moduleName = "ShootingGallery"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michael/Programming/100%20days%20with%20Swift%20(UIkit)/Challenge%20day%2066/ShootingGallery/ShootingGallery/GameScene.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "198"
+                  endingLineNumber = "198"
+                  offsetFromSymbolStart = "116">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
