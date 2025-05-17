@@ -3,7 +3,6 @@
 //  Sunny
 //
 //  Created by Михаил Тихомиров on 13.03.2024.
-//  Copyright © 2024 Ivan Akulov. All rights reserved.
 //
 
 import Foundation
