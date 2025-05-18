@@ -29,19 +29,7 @@ class NetworkWeatherManager {
     }
     
     
-//    func fetchCurrentWeather(forCity city:String) {
-//        let urlString = "https://api.openweathermap.org/data/2.5/weather?q=\(city)&appid=\(apikey)&units=metric"
-//        performRequest(withURLString: urlString)
-//    }
-//    
-//    
-//    func fetchCurrentWeather(forLatitude latitude: CLLocationDegrees, longitude: CLLocationDegrees) {
-//        let urlString = "https://api.openweathermap.org/data/2.5/weather?lat=\(latitude)&lon=\(longitude)&appid=\(apikey)&units=metric"
-//        performRequest(withURLString: urlString)
-//    }
-    
-    
-    
+
     // this fileprivate because we do not use it anywhere just only in our class
     fileprivate func performRequest(withURLString urlString: String) {
         guard let url = URL(string: urlString) else { return }

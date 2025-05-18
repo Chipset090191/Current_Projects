@@ -26,11 +26,13 @@ class ViewController: UIViewController {
     
     @IBAction func searchPressed(_ sender: UIButton) {   // sauing unowned self - we guarantee that self is existed after closure worked
         self.presentSearchAlertController(withTitle: "Enter city name", message: nil, style: .alert) { [unowned self] city in
+            // this task works immediatelly bacause we are waiting our data now!
             DispatchQueue.global(qos: .userInteractive).async {
                 self.networkWeatherManager.fetchCurrentWeather(forRequestType: .cityName(city: city))
             }
         }
     }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,11 +44,9 @@ class ViewController: UIViewController {
             self.updateInterfaceWith(weather: currentWeather)
         }
         
+        _ = locationManager  // we trigger our lazy var variable
         
-        if CLLocationManager.locationServicesEnabled() { // it works just only user enabled locationServices
-                locationManager.requestLocation()
-        }
-        
+            
     }
     
     func updateInterfaceWith(weather: CurrentWeather) {
@@ -62,6 +62,15 @@ class ViewController: UIViewController {
 
 // MARK: - CLLocationManagerDelegate
 extension ViewController: CLLocationManagerDelegate {
+    // 1
+    func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
+        let status = manager.authorizationStatus
+        if status == .authorizedWhenInUse || status == .authorizedAlways {
+            manager.requestLocation()
+        }
+    }
+    
+    // 2
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let location = locations.last else { return }
         let latitude = location.coordinate.latitude
@@ -75,8 +84,6 @@ extension ViewController: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print(error.localizedDescription)
     }
-    
-    
     
 }
 

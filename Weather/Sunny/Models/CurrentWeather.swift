@@ -8,11 +8,13 @@
 import Foundation
 
 struct CurrentWeather {
+    
     let cityName:String
     let temperature:Double
     var temperatureString: String {
         return String(format: "%.0f", temperature) // %.0f - 0 numbers after coma
     }
+    
     let feelsLikeTemperature:Double
     var feelsLikeTemperatureString: String {
         return String(format: "%.0f", feelsLikeTemperature)
